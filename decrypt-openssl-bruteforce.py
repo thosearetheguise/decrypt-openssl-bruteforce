@@ -36,7 +36,7 @@ def main():
         requiredNamed.add_argument("-w","--wordlist", help="Path to the wordlist file",required=True)
         requiredNamed.add_argument("-o","--outfile", help="Path of the plain text output if decrypted.",required=True)
         optionalNamed = parser.add_argument_group('optional arguments')
-        optionalNamed.add_argument("-c","--cipher",nargs='?', help="Any opessl supported cipher including leading - (openssl enc -ciphers) default: -aes256",default="-aes256")
+        optionalNamed.add_argument("-c","--cipher",nargs='?', help="Any openssl supported cipher including leading - (openssl enc -ciphers) default: -aes256",default="-aes256")
         optionalNamed.add_argument("-s","--salted",type=str2bool, nargs='?', const=True, default=False, help="Data is encrypted with salt (openssl enc'd data with salted password) default: False")
         optionalNamed.add_argument("-b64","--base64",type=str2bool, nargs='?', const=True, default=False, help="Data is Base64 encoded. Default: False")
         optionalNamed.add_argument("-v","--verbose",type=str2bool, nargs='?', const=True, default=False, help="Verbose output, output all passwords atempted. Default: False")
