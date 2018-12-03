@@ -1,5 +1,5 @@
 # decrypt-openssl-bruteforce
-Basic application to bruteforce decrypt files encrypted with openssl and save the plain text file locally.
+Basic application to peform a dictionary attack to 'bruteforce' decrypt files encrypted with openssl and save the plain text file locally.
 ```
 usage: decrypt-openssl-bruteforce.py [-h] -i INFILE -w WORDLIST -o OUTFILE
                                      [-c [CIPHER]] [-s [SALTED]]
