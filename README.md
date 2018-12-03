@@ -21,7 +21,7 @@ required arguments:
 
 optional arguments:
   -c [CIPHER], --cipher [CIPHER]
-                        Any opessl supported cipher including leading -
+                        Any openssl supported cipher including leading -
                         (openssl enc -ciphers) default: -aes256
   -s [SALTED], --salted [SALTED]
                         Data is encrypted with salt (openssl enc'd data with
