@@ -1,5 +1,9 @@
 # decrypt-openssl-bruteforce
 Basic application to peform a dictionary attack to 'bruteforce' decrypt files encrypted with openssl and save the plain text file locally.
+
+TODO:
+As per the stream, it currently does not support Python3 because I am a n00b. A fix will be coming soon.
+
 ```
 usage: decrypt-openssl-bruteforce.py [-h] -i INFILE -w WORDLIST -o OUTFILE
                                      [-c [CIPHER]] [-s [SALTED]]
