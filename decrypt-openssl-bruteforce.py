@@ -66,7 +66,7 @@ def main():
                     cmd = "openssl enc -d {}".format(cipher) +['',' -base64'][b64] + ['',' -salt'][salted] + " -in {} -out {} -k {}".format(encryptedfile,outputfile,line)
                     if veryverbose:
                         print("Full command: {}".format(cmd))
-                    if "bad decrypt" not in cmdline(cmd):
+                    if b"bad decrypt" not in cmdline(cmd):
                         print(green+"\nKey Found! The key is:{}".format(line))
                         print(normal+"Output File Name : {}".format(outputfile))
                         sys.exit()
